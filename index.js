@@ -4,7 +4,9 @@ const Y = [1, 2, 3, 4, 5, 6, 7, 8];
 const moveKnight = initPosition => {
   let [x, y] = initPosition.split("");
   x = X.indexOf(x.toUpperCase());
+  if (x === -1) return;
   y = parseInt(y);
+  if (y < 1 || y > 8) return;
   let possibleMoves = [];
   // Check is the coordites of the final position
   // after the move are within the
@@ -42,6 +44,9 @@ const submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", () => {
   let inputValue = document.getElementById("startMove").value;
   let possibleMoves = moveKnight(inputValue);
+  console.log(possibleMoves);
   const results = document.getElementById("results");
-  results.innerHTML = possibleMoves;
+  results.innerHTML = possibleMoves
+    ? possibleMoves
+    : "Введите правильное значение начальной позиции";
 });

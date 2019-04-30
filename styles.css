@@ -1,0 +1,40 @@
+.input-box {
+  border: 1px solid rgb(170, 155, 155);
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.input-box label {
+  font-weight: 600;
+}
+
+.input-box input {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.output-box {
+  border: 1px solid rgb(170, 155, 155);
+  padding: 20px 10px;
+  position: relative;
+}
+
+.output-box .output-text {
+  margin-bottom: 40px;
+}
+
+.output-box #results {
+  margin-bottom: 30px;
+}
+
+.output-box button {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: rgb(166, 166, 250);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
